@@ -2,6 +2,9 @@
 	text-align: center;
 	background: #d9d9d9;
 	margin: 0 -30px;
+	border-width: 1px 0 1px 0;
+	border-color: #696969;
+	border-style: solid;
 }
 
 .nav-item {
@@ -10,13 +13,17 @@
 	background: #d9d9d9;
 }
 
-.foot-list {
-	text-align: center;
+.icons-left {
+	list-style-type: none;
+	
+	border-width: 0 0 1px 0;
+	border-color: #e8e8e8;
+	border-style: solid;
+	padding: 0 0 0 21px;
 }
 
 .foot-item {
-	display: inline-block;
-	padding: 0 31px;
+	padding: 5px 7px;
 }
 
 .title {
@@ -31,25 +38,56 @@ body {
 }
 
 .right {
-	width: 150px;
+	width: 100%;
+	max-width: 150px;
 	height: 100vh;
 	float: right;
-	background: #e8e8e8;
-	padding: 0 0 0 5px;
+	background: #02b5c4;
+	padding: 0 15px 0 5px;
 	position: fixed;
-	left: 1120px;
-	border: 1px solid #696969;
+	right: 0;
+	bottom: 0;
+	margin: -9px 0 0 0;
+}
+
+.right a {
+	text-decoration: none;
+	color: #383838;
+	font-weight: bold;
+}
+
+.right a:hover {
+	color: #e8e8e8;
+}
+
+.left {
+	float: left;
+	position: fixed;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background: #02b5c4;
+	width: 100%;
+	max-width: 150px;	
+}
+
+.left p {
+	font-size: 22px;
+	font-weight: bold;
+	padding: 0 0 0 96px;
 }
 
 #wrapper {
-	width: 1200px;
+	width: 1100px;
+	height: 100vh;
+	margin: -9px 0 0 0;
 }
 
 header {
 	width: 100%;
 	height: 71px;
 	background-color: #e8e8e8;
-	margin: 0 0 0 210px;
+	margin: 0 0 0 150px;
 	padding: 30px;
 	max-width: 740px;
 	border: 1px solid #696969;
@@ -60,7 +98,7 @@ header {
 	height: auto;
 	background-color: #eee;
 	float: left;
-	margin: 0 0 0 210px;
+	margin: 0 0 0 150px;
 	padding: 30px;
 	max-width: 740px;
 	border: 1px solid #696969;
@@ -73,22 +111,25 @@ header {
 .home-page-img {
 	width: 100%;
 	max-width: 450px;
+	border-width: 1px;
+	border-color: #696969;
+	border-style: solid;
 }
 
 .ep-div {
 	float: right;
 	display: inline-block;
 	clear: both;
+	width: 200px;
 }
 
 h3 {
 	text-align: center;
-	margin: 35px 65px 0 0;
+	margin: 15px 65px 0 0;
 }
 
 .click-here {
 	text-align: center;
-	margin: 35px 65px 66px;
 	font-size: 20px;
 	
 }
@@ -96,28 +137,35 @@ h3 {
 #about-page-img {
 	width: 100%;
 	max-width: 250px;
+	border-width: 1px;
+	border-color: #696969;
+	border-style: solid;
 }
 
 .rect-img {
 	width: 275px;
 	height: 150px;
+	border-width: 1px;
+	border-color: #696969;
+	border-style: solid;
 }
 
 .footer-img {
-	width: 70px;
-	height: 70px;
+	width: 30px;
+	height: 30px;
 }
 
 footer {
 	width: 100%;
-	height: auto;
 	background-color: #FFFFFF;
 	float: left;
-	margin: 0 0 0 210px;
+	margin: 0 0 0 150px;
 	padding: 30px;
 	max-width: 740px;
 	clear: both;
-	border: 1px solid #696969;
+	border-width: 0 1px 1px 1px;
+	border-color: #696969;
+	border-style: solid;
 }
 
 a {
@@ -127,4 +175,10 @@ a {
 
 a:hover {
 	color: #383838;
+}
+
+.small-text {
+	font-size: 12px;
+	font-weight: light;
+	color: #696969;
 }
