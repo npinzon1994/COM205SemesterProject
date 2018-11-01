@@ -33,9 +33,9 @@ body {
 	height: auto;
 	background-color: #800000;
 	float: left;
-	margin: 0 0 0 150px;
+	margin: 0 0 0 210px;
 	padding: 30px;
-	max-width: 840px;
+	max-width: 740px;
 }
 
 .side-list {
@@ -47,9 +47,32 @@ body {
 	max-width: 450px;
 }
 
+.ep-div {
+	float: right;
+	display: inline-block;
+	clear: both;
+}
+
+h3 {
+	text-align: center;
+	margin: 35px 65px 0 0;
+}
+
+.click-here {
+	text-align: center;
+	margin: 35px 65px 66px;
+	font-size: 20px;
+	
+}
+
 #about-page-img {
 	width: 100%;
 	max-width: 250px;
+}
+
+.rect-img {
+	width: 275px;
+	height: 150px;
 }
 
 .footer-img {
@@ -62,8 +85,8 @@ footer {
 	height: auto;
 	background-color: #FFFFFF;
 	float: left;
-	margin: 0 0 0 150px;
+	margin: 0 0 0 210px;
 	padding: 30px;
-	max-width: 840px;
+	max-width: 740px;
 	clear: both;
 }
