@@ -17,22 +17,25 @@ body {
 }
 
 .right {
-	width: 150px;
+	width: 140px;
 	height: 100%;
 	float: right;
 	background: #000;
-	
+	padding: 0 0 0 5px;
+}
+
+#wrapper {
+	width: 1200px;
 }
 
 #main {
-    width: 100%;
-    height: auto;
-    background-color: #800000;
-    float: left;
-    margin: 0 0 0 205px;
-    padding: 30px;
-    max-width: 840px;
-    
+	width: 100%;
+	height: auto;
+	background-color: #800000;
+	float: left;
+	margin: 0 0 0 150px;
+	padding: 30px;
+	max-width: 840px;
 }
 
 .side-list {
@@ -44,17 +47,23 @@ body {
 	max-width: 450px;
 }
 
+#about-page-img {
+	width: 100%;
+	max-width: 250px;
+}
+
 .footer-img {
 	width: 70px;
 	height: 70px;
 }
 
 footer {
-	width: 100%px;
+	width: 100%;
 	height: auto;
-    background-color: #FFFFFF;
-    float: left;
-    margin: 0 0 0 205px;
-    padding: 30px;
+	background-color: #FFFFFF;
+	float: left;
+	margin: 0 0 0 150px;
+	padding: 30px;
 	max-width: 840px;
+	clear: both;
 }
