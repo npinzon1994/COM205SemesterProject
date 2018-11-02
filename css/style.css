@@ -15,15 +15,11 @@
 
 .icons-left {
 	list-style-type: none;
-	
-	border-width: 0 0 1px 0;
-	border-color: #e8e8e8;
-	border-style: solid;
-	padding: 0 0 0 21px;
+	float: right;
 }
 
 .foot-item {
-	padding: 5px 7px;
+	padding: 5px 5px 5px 0;;
 }
 
 .title {
@@ -43,7 +39,7 @@ body {
 	height: 100vh;
 	float: right;
 	background: #02b5c4;
-	padding: 0 15px 0 5px;
+	padding: 0 55px 0 5px;
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -52,8 +48,9 @@ body {
 
 .right a {
 	text-decoration: none;
-	color: #383838;
-	font-weight: bold;
+	color: #023B40;
+	font-weight: normal;
+	font-size: 22px;
 }
 
 .right a:hover {
@@ -68,19 +65,21 @@ body {
 	top: 0;
 	background: #02b5c4;
 	width: 100%;
-	max-width: 150px;	
+	max-width: 150px;
 }
 
 .left p {
 	font-size: 22px;
 	font-weight: bold;
-	padding: 0 0 0 96px;
+	float: left;
+	padding: 0 0 0 22px;
 }
 
 #wrapper {
 	width: 1100px;
 	height: 100vh;
 	margin: -9px 0 0 0;
+	text-align: center;
 }
 
 header {
@@ -102,6 +101,18 @@ header {
 	padding: 30px;
 	max-width: 740px;
 	border: 1px solid #696969;
+}
+
+#main h2 {
+	padding: 0 20px 0 0;
+}
+
+#main img {
+	margin: 0 20px 0 0;
+}
+
+#main iframe {
+	margin: 0 20px 0 0;
 }
 
 .side-list {
@@ -160,7 +171,7 @@ footer {
 	background-color: #FFFFFF;
 	float: left;
 	margin: 0 0 0 150px;
-	padding: 30px;
+	padding: 15px 30px;
 	max-width: 740px;
 	clear: both;
 	border-width: 0 1px 1px 1px;
@@ -181,4 +192,24 @@ a:hover {
 	font-size: 12px;
 	font-weight: light;
 	color: #696969;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  color: #02b5c4;
+  background: #023B40;
+  float: left;
+  margin: 45px 0 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.circle p {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
 }
