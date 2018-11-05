@@ -3,16 +3,37 @@
 <head>
 <title>Home | Nick Pinzon - Official Site</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/offsetSideBar.js"></script>
 </head>
 
 
 <body>
-	<aside class="left">
+	<header>
+		<div style="margin: 0 auto; max-width: 1100px;">
+		<div style="float: left;">
+			<h1 style="text-align: left; margin: 0; padding: 15px 0 0 30px; font-size: 22px;">
+				<a href="index.html" style="color: #fff; font-weight: normal;">NICK PINZON</a>
+			</h1>
+		</div>
+		
+		<div style="float: right;">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="html/aboutPage.html">ABOUT</a></li>
+				<li class="nav-item"><a href="html/newsPage.html">NEWS</a></li>
+				<li class="nav-item"><a href="html/armaBanksPage.html">PROJECTS</a></li>
+				<li class="nav-item"><a href="html/contactPage.html">CONTACT</a></li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<div id=wrapper>
+		<div class="left" id="leftSideBar">
 
-		<div style="height: 33%;">
+		<div style="height: 180px;">
 			<div class="circle">
 				<a href="html/armaBanksPage.html"
-					style="color: #02b5c4; font-size: 20px;">AB</a>
+					style="color: #e8e8e8; font-size: 20px;">AB</a>
 			</div>
 			<div>
 				<ul class="icons-left">
@@ -30,10 +51,10 @@
 			</div>
 		</div>
 
-		<div style="height: 33%;">
+		<div style="height: 180px;">
 			<div class="circle">
 				<a href="html/motionOceanPage.html"
-					style="color: #02b5c4; font-size: 20px;">MO</a>
+					style="color: #e8e8e8; font-size: 20px;">MO</a>
 			</div>
 
 			<ul class="icons-left">
@@ -50,10 +71,10 @@
 			</ul>
 		</div>
 
-		<div style="height: 33%;">
+		<div style="height: 180px;">
 			<div class="circle">
 				<a href="html/nickyStixPage.html"
-					style="color: #02b5c4; font-size: 20px;">NS</a>
+					style="color: #e8e8e8; font-size: 20px;">NS</a>
 			</div>
 			<ul class="icons-left">
 				<li class="foot-item"><a
@@ -67,55 +88,40 @@
 			</ul>
 		</div>
 
-	</aside>
-
-
-	<aside class="right">
-		<ul style="list-style-type: none;">
+	</div>
+	
+	<div id="main">
+	
+			<h2 style="margin-right: 190px;">COME PARTY WITH ARMABANKS AT THE DRIFT INN 11/30!</h2>
+			<img src="images/AB_89North.png" class="home-page-img"> <br>
+			<h2 style="margin-right: 190px;">**NEW!** MOTION OCEAN VIDEOS!</h2>
+			<iframe style="margin: 0 52px 0 0;" width="450" height="235"
+				src="https://www.youtube.com/embed/erqrS35LRR4" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen style="border: 1px solid #696969;"></iframe>
+			<br> <a style="margin: 0 60px 0 0"
+				href="https://www.youtube.com/watch?v=wz0HmLoCDdQ" target="_blank">CLICK
+				HERE TO LISTEN TO OUR NEW OCTOPATH TRAVELER COVER!</a>
+			<p></p>
+			<h2 style="margin:  0 100px 0 -80px;">NEW NICKYSTIX COVERS COMING SOON!</h2>
+			<p></p>
+			<iframe style="margin: 0 60px 0 0" width="480px" height="320"
+				scrolling="no" frameborder="no" allow="autoplay"
+				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/47431833&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			
+	</div>
+	
+		<aside class="right">
+		<ul style="list-style-type: none; padding-right: 20px;">
 			<li class="side-list"><a href="html/armaBanksPage.html">ARMABANKS</a></li>
 			<li class="side-list"><a href="html/motionOceanPage.html">MOTION
 					OCEAN</a></li>
 			<li class="side-list"><a href="html/nickyStixPage.html">NICKYSTIX</a></li>
 		</ul>
 	</aside>
-
-
-
-	<header>
-		<h1 class="title">
-			<a href="index.html" style="color: #383838">NICK PINZON</a>
-		</h1>
-
-	</header>
-	<ul class="nav-list">
-		<li class="nav-item"><a href="html/aboutPage.html">ABOUT</a></li>
-		<li class="nav-item"><a href="html/newsPage.html">NEWS</a></li>
-		<li class="nav-item"><a href="html/armaBanksPage.html">PROJECTS</a></li>
-		<li class="nav-item"><a href="html/contactPage.html">CONTACT</a></li>
-	</ul>
-	<div id=wrapper>
-
-		<div id="main">
-			<h2>COME PARTY WITH ARMABANKS AT THE DRIFT INN 11/30!</h2>
-			<img src="images/AB_89North.png" class="home-page-img"> <br>
-			<h2>**NEW!** MOTION OCEAN VIDEOS!</h2>
-			<iframe style="margin: 0 52px 0 0;" width="450" height="235"
-				src="https://www.youtube.com/embed/erqrS35LRR4" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen style="border: 1px solid #696969;"></iframe>
-			<br> <a style="margin: 0 52px 0 0;"
-				href="https://www.youtube.com/watch?v=wz0HmLoCDdQ" target="_blank">CLICK
-				HERE TO LISTEN TO OUR NEW OCTOPATH TRAVELER COVER!</a>
-
-			<h2>NEW NICKYSTIX COVERS COMING SOON!</h2>
-			<iframe style="margin: 0 58px 0 0;" width="480px" height="320"
-				scrolling="no" frameborder="no" allow="autoplay"
-				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/47431833&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-		</div>
-
-		<footer style="border-width: 1px 0 0 0; border-style: solid; border-color: #696969;">
+	</div>
+	<footer id="footer" style="border-width: 1px 0 0 0; border-style: solid; border-color: #696969;">
 			<p>© 2018 Nick Pinzon</p>
 		</footer>
-	</div>
 </body>
 </html>
