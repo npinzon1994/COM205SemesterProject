@@ -9,6 +9,7 @@ html, body {
 	margin-right: auto;
 	margin-left: auto;
 	background: #023B40;
+	float: right;
 }
 
 .nav-item {
@@ -116,7 +117,9 @@ header {
 	height: 100%;
 	background-color: #e8e8e8;
 	max-width: 740px;
-	padding: 0 0 0 200px;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 45px; 
 }
 
 #main h2 {
