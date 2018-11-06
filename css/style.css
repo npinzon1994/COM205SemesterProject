@@ -45,7 +45,6 @@ body {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 29px;
-	height: auto;
 	margin: 0;
 }
 
@@ -123,12 +122,13 @@ header {
 }
 
 #main h2 {
-	padding: 0 0 0 117px;
+	padding-left: 123px;
 }
 
 #main img {
 	margin: 0 52px 0 0;
 }
+
 
 #main iframe {
 	margin: 0 20px 0 0;
@@ -151,7 +151,7 @@ header {
 	display: inline-block;
 	clear: both;
 	width: 200px;
-	margin-top: 20px;
+	margin: auto;
 }
 
 h3 {
@@ -189,7 +189,6 @@ h3 {
 footer {
 	width: 100%;
 	background-color: #FFFFFF;
-	float: left;
 	margin: 0 auto;
 	padding: 15px 30px;
 	clear: both;
@@ -201,7 +200,7 @@ footer {
 footer p {
 	 bottom: 0; 
 	 text-align: center; 
-	 margin: 0 120px 0 0;
+	 margin-bottom: 0;
 }
 
 a {
@@ -242,10 +241,9 @@ a:hover {
 .click-here-button {
 	text-align: center; 
 	margin: 15px 65px 0 0; 
-	background: #81d164;
-	color: #383838;
+	background: #023B40;
+	color: #fff;
 	padding: 10px 12px;
-	border-radius: 12px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: #d9d9d9;
