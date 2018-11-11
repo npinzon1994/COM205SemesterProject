@@ -10,16 +10,20 @@ html, body {
 	margin-left: auto;
 	background: #023B40;
 	float: right;
+	margin-top: 50px;
+	margin-bottom: 0;
+	list-style-type: none;
 }
 
 .nav-item {
-	display: inline-block;
+	float: left;
 	padding: 0 31px 10px 31px;
 	background: #023B40;
 }
 
 .nav-item a {
 	color: #fff;
+	display: block;
 }
 
 .nav-item a:hover {
@@ -51,7 +55,7 @@ body {
 .right {
 	width: 100%;
 	max-width: 190px;
-	top: 68px;
+	top: 131px;
 	float: right;
 	right: 0;
 	background: #e8e8e8;
@@ -108,7 +112,7 @@ header {
 	width: 100%;
 	background-color: #023B40;
 	text-align: center;
-	height: 60px;
+	height: 130px;
 }
 
 #main {
