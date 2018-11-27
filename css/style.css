@@ -115,6 +115,7 @@ header {
 	background-color: #023B40;
 	text-align: center;
 	height: 100px;
+	border-bottom: 1px solid #C8C8C8;
 }
 
 #main {
@@ -151,7 +152,8 @@ header {
 	vertical-align: middle;
 	width: 100%;
 	max-width: 450px;
-	margin-left: 6px;
+	height: 100%;
+	max-height: 319px;
 	border-width: 1px;
 	border-color: #696969;
 	border-style: solid;
@@ -311,7 +313,14 @@ label {
 	display: none;
 }
 
-@media only screen and (max-width: 1050px){
+.small-icon{
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	width: 30px;
+}
+
+@media only screen and (max-width: 1000px){
 	label {
 		display: block;
 		cursor: pointer;
@@ -324,18 +333,24 @@ label {
 		max-height: 0px;
 		display: none;
 		clear: both;
+		border-top: 1px solid #d3d3d3;
 
 	}
 
 	.nav-item{
 		float: none;
+		padding: 0;
 	}
 	
 	.nav-item a {
 		display: block;
-		border-bottom: 1px solid #696969;
+		border-bottom: 1px solid #d3d3d3;
 		margin: 0;
 
+	}
+
+	.nav-item a:hover {
+		background: #04727c;
 	}
 	#toggle:checked + .nav-list {
 		display: block;
@@ -349,4 +364,27 @@ label {
 @media all and (max-width: 1125px) {
 	.right { display: none; }
 	.left { display: none; }
+}
+
+@media all and (max-width: 429px) {
+	.move-right { margin-left: 60px; }
+	.make-links-small ul li a{
+		font-size: 12px;
+		margin-left: 3px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.move-right{margin-right: 45px;}
+}
+
+
+@media all and (max-width: 407px) {
+    .click-here-button{
+        margin-right: 60px;
+        margin-bottom: 20px;
+    }
+    .that-div{
+        padding-left: 33px;
+    }
 }
