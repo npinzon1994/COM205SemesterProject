@@ -8,17 +8,14 @@ html, body {
 
 #page-container{
 	width: 100%;
-	min-width: 1143px;
+	/*min-width: 1143px;*/
 }
 
 .nav-list {
 	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	background: #023B40;
 	float: right;
-	margin-top: 50px;
-	margin-bottom: 0;
 	list-style-type: none;
 }
 
@@ -33,6 +30,8 @@ html, body {
 	display: block;
 	font-family: 'Karla', sans-serif;
 	font-size: 20px;
+	line-height: 80px;
+	clear: right;
 }
 
 .nav-item a:hover {
@@ -67,12 +66,10 @@ body {
 	float: right;
 	right: 0;
 	background: #e8e8e8;
-	border-color: #c8c8c8;
-	border-style: solid;
-	border-width: 0 0 0 1px;
 	height: 100%;
 	position: fixed;
 	margin: auto;
+	padding-right: 21px;
 }
 
 .right a {
@@ -93,9 +90,6 @@ body {
 	padding: 0 20px 0 0;
 	position: fixed;
 	left: 0;
-	border-color: #C8C8C8;
-	border-style: solid;
-	border-width: 0 1px 0 0;
 	margin: auto;
 	height: 100%;
 }
@@ -118,35 +112,30 @@ body {
 
 header {
 	width: 100%;
-	min-width: 1050px;
 	background-color: #023B40;
 	text-align: center;
-	height: 130px;
+	height: 100px;
 }
 
 #main {
 	width: 100%;
-	height: 100%;
 	background-color: #FFF;
 	max-width: 740px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 20px;
+	padding: 20px 0;
+	border-width: 0 1px;
+	border-color: #C8C8C8;
+	border-style: solid;
 }
 
 #main h2 {
-	padding-left: 123px;
 	font-family: 'Karla', sans-serif;
 	font-size: 30px;
 }
 
-#main img {
-	margin: 0 52px 0 0;
-}
-
-
-#main iframe {
-	margin: 0 20px 0 0;
+#main p {
+	margin: 16px;
 }
 
 .side-list {
@@ -158,19 +147,22 @@ header {
 }
 
 .home-page-img {
+	display: inline-block;
+	vertical-align: middle;
 	width: 100%;
 	max-width: 450px;
+	margin-left: 6px;
 	border-width: 1px;
 	border-color: #696969;
 	border-style: solid;
 }
 
 .ep-div {
-	float: right;
 	display: inline-block;
+	vertical-align: middle;
 	clear: both;
 	width: 200px;
-	margin: auto;
+	background: #d9d9d9;
 }
 
 .ep-div a{
@@ -180,7 +172,7 @@ header {
 
 h3 {
 	text-align: center;
-	margin: 15px 65px 0 0;
+	/*margin: 15px 65px 0 0;*/
 	font-family: 'Karla', sans-serif;
 }
 
@@ -196,6 +188,7 @@ h3 {
 	border-width: 1px;
 	border-color: #696969;
 	border-style: solid;
+	margin: 7px;
 }
 
 .rect-img {
@@ -213,19 +206,21 @@ h3 {
 
 footer {
 	width: 100%;
-	background-color: #FFFFFF;
+	max-width: 740px;
+	height: 40px;
+	background-color: #383838;
+	color: #FFF;
 	margin: 0 auto;
-	padding: 15px 30px;
 	clear: both;
-	border-width: 1px 1px 1px 1px;
-	border-color: #696969;
+	border-width: 0 1px;
+	border-color: #383838;
 	border-style: solid;
+	padding-top: 20px;
 }
 
 footer p {
-	 bottom: 0; 
-	 text-align: center; 
-	 margin-bottom: 0;
+	 text-align: center;
+	 margin: 0;
 }
 
 a {
@@ -239,7 +234,7 @@ a:hover {
 
 .small-text {
 	font-size: 12px;
-	font-weight: light;
+	font-weight: lighter;
 	color: #696969;
 }
 
@@ -269,7 +264,6 @@ a:hover {
 
 .click-here-button {
 	text-align: center; 
-	margin: 15px 65px 0 0; 
 	background: #023B40;
 	color: #fff;
 	padding: 10px 12px;
@@ -302,4 +296,57 @@ textarea {
 
 .contact h3 {
 	margin: 0;
+}
+
+label {
+	margin: 0 30px 0 0;
+	font-size: 30px;
+	display: none;
+	width: 30px;
+	float: right;
+	color: #FFF;
+}
+
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 1050px){
+	label {
+		display: block;
+		cursor: pointer;
+		line-height: 90px;
+
+	}
+	.nav-list {
+		text-align: center;
+		width: 100%;
+		max-height: 0px;
+		display: none;
+		clear: both;
+
+	}
+
+	.nav-item{
+		float: none;
+	}
+	
+	.nav-item a {
+		display: block;
+		border-bottom: 1px solid #696969;
+		margin: 0;
+
+	}
+	#toggle:checked + .nav-list {
+		display: block;
+		transition-property: all;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+		max-height: 600px;
+	}
+}
+
+@media all and (max-width: 1125px) {
+	.right { display: none; }
+	.left { display: none; }
 }
