@@ -348,6 +348,11 @@ label {
 	font-size: 20px;
 }
 
+header h1 a img {
+	width: 340px;
+	height: 60px;
+}
+
 @media only screen and (max-width: 1000px){
 	label {
 		display: block;
@@ -418,12 +423,27 @@ label {
 @media all and (max-width: 407px) {
     .click-here-button{
         margin-bottom: 20px;
+		margin-right: 60px;
     }
     .that-div{
         padding-left: 33px;
     }
 }
 
-@media all and (max-width: 490px) {
-	label { display: none;}
+@media all and (max-width: 475px) {
+	header h1 {
+		width: 255px;
+		height: 45px;
+	}
+
+	header h1 a {
+		width: 255px;
+		height: 45px;
+	}
+
+	header h1 a img {
+		margin-top: 12px;
+		width: 255px;
+		height: 45px;
+	}
 }
