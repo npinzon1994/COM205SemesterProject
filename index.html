@@ -4,7 +4,7 @@
 <title>Home | Nick Pinzon - Official Site</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/offsetSideBar.js"></script>
+<script type="text/javascript" src="assets/dropdown.js"></script>
 </head>
 
 
@@ -23,17 +23,17 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="html/aboutPage.html">ABOUT</a></li>
                 <li class="nav-item"><a href="html/newsPage.html">NEWS</a></li>
-                <div CLASS="dropdown">
-                    <button class="dropbtn">PROJECTS
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="html/armaBanksPage.html">ARMABANKS</a>
-                        <a href="html/motionOceanPage.html">MOTION OCEAN</a>
-                        <a href="html/nickyStixPage.html">NICKYSTIX</a>
+                <li class="nav-item" style="margin-top: 41px;">
+                    <div class="dropdown">
+                        <button class="dropbtn" onClick="myFunction()">PROJECTS</button>
+                         <div id="myDropdown" class="dropdown-content">
+                             <a href="html/armaBanksPage.html">ARMABANKS</a>
+                            <a href="html/motionOceanPage.html">MOTION OCEAN</a>
+                            <a href="html/nickyStixPage.html">NICKYSTIX</a>
+                        </div>
                     </div>
-                </div>
-                <li class="nav-item"><a href="../html/contactPage.html">CONTACT</a>
+                </li>
+                <li class="nav-item"><a href="html/contactPage.html">CONTACT</a>
             </ul>
 			
 		</div>
