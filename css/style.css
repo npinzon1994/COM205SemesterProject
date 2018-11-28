@@ -425,6 +425,14 @@ label {
 	display: none;
 }
 
+.foot-item a:hover{
+	opacity: 0.6;
+}
+
+.move-right a:hover{
+	opacity: 0.6;
+}
+
 .small-icon{
 	margin: 0;
 	padding: 0;
