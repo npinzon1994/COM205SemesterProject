@@ -407,7 +407,18 @@ a:hover {
 }
 
 .click-here-button {
-	text-align: center; 
+	text-align: center;
+	background: #023B40;
+	color: #fff;
+	padding: 10px 12px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d9d9d9;
+	font-weight: bold;
+}
+
+.request-button {
+	text-align: center;
 	background: #023B40;
 	color: #fff;
 	padding: 10px 12px;
@@ -653,12 +664,20 @@ header h1 a img {
 @media all and (max-width: 407px) {
     .click-here-button{
         margin-bottom: 20px;
-		margin-right: 60px;
     }
     .that-div{
         padding-left: 33px;
     }
 }
+
+@media all and (max-width: 407px) {
+	.request-button{
+		margin-bottom: 20px;
+		margin-right: 60px;
+	}
+
+}
+
 
 @media all and (max-width: 475px) {
 	header h1 {
