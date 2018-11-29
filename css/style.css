@@ -553,7 +553,9 @@ header h1 a img {
 	#myDropdown {
 		z-index: 2;
 		position: relative;
-		margin-right: 73px;
+		margin-right: 74px;
+		margin-top: 8px;
+		margin-bottom: 0;
 	}
 
 	#myDropdown a{
@@ -563,9 +565,11 @@ header h1 a img {
 		color: #fff;
 		padding-left: 27px;
 		padding-right: 0;
+		padding-top: 40px;
 	}
 
 	#myDropdown a:hover {
+		background: #023B40;
 		color: #d9d9d9;
 		font-size: 22px;
 	}
