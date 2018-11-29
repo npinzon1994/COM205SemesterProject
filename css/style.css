@@ -348,7 +348,8 @@ footer {
 	border-width: 0 1px;
 	border-color: #383838;
 	border-style: solid;
-	padding-top: 20px;
+	padding-top: 0;
+    padding-bottom: 15px;
 	position: absolute;
 	bottom: 0;
 }
