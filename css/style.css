@@ -68,6 +68,8 @@ html, body {
 
 #page-container{
 	width: 100%;
+	height: 100%;
+	position: relative;
 	/*min-width: 1143px;*/
 }
 
@@ -75,14 +77,17 @@ html, body {
 	text-align: center;
 	margin: 0 auto;
 	background: #023B40;
-	float: right;
 	list-style-type: none;
+	position: relative;
+	z-index: 1;
 }
 
 .nav-item {
 	float: left;
 	padding: 0 31px 10px 31px;
 	background: #023B40;
+	position: relative;
+	z-index: 1;
 }
 
 .nav-item a {
@@ -94,6 +99,7 @@ html, body {
 	padding-top: 40px;
 	padding-bottom: 3px;
 	position: relative;
+	z-index: 1;
 }
 
 .nav-item a:hover {
@@ -165,15 +171,16 @@ body {
 }
 
 .right {
-	width: 170px;
-	top: 131px;
-	float: right;
+	max-width: 170px;
 	right: 0;
+	top: 0;
+	float: right;
 	background: #e8e8e8;
 	height: 100%;
-	position: fixed;
 	margin: auto;
 	padding-right: 21px;
+	position: absolute;
+	border-left: 1px solid #c8c8c8;
 }
 
 .right a {
@@ -188,14 +195,18 @@ body {
 }
 
 .left {
-	float: left;
 	background: #e8e8e8;
-	width: 150px;
 	padding: 0 20px 0 0;
-	position: fixed;
-	left: 0;
+	position: absolute;
 	margin: auto;
 	height: 100%;
+	overflow-y: hidden;
+	top: 0;
+	border-right: 1px solid #c8c8c8;
+}
+
+#innerMain {
+	margin-bottom: 60px;
 }
 
 .left p {
@@ -212,6 +223,7 @@ body {
 	text-align: center;
 	background: #e8e8e8;
 	display: inline;
+	position: relative;
 }
 
 header {
@@ -220,18 +232,23 @@ header {
 	text-align: center;
 	height: 100px;
 	border-bottom: 1px solid #C8C8C8;
+	position: absolute;
+	z-index: 1;
 }
 
 #main {
 	width: 100%;
 	background-color: #FFF;
-	max-width: 740px;
+	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 20px 0;
 	border-width: 0 1px;
 	border-color: #C8C8C8;
 	border-style: solid;
+	position: relative;
+	top: 101px;
+	/*z-index: -1;*/
 }
 
 #main h2 {
@@ -312,7 +329,6 @@ h3 {
 
 footer {
 	width: 100%;
-	max-width: 740px;
 	height: 40px;
 	background-color: #383838;
 	color: #FFF;
@@ -322,6 +338,8 @@ footer {
 	border-color: #383838;
 	border-style: solid;
 	padding-top: 20px;
+	position: absolute;
+	bottom: 0;
 }
 
 footer p {
@@ -421,6 +439,24 @@ label {
 	color: #FFF;
 }
 
+#myDropdown a {
+	color: #383838;
+	padding: 14px;
+}
+
+#myDropdown a:hover {
+	background: #02b5c4;
+	color: #fff;
+}
+
+#myDropdown a:before{
+	visibility: hidden;
+}
+
+#myDropdown a:hover:before{
+	visibility: hidden;
+}
+
 #toggle {
 	display: none;
 }
@@ -445,6 +481,10 @@ label {
 	font-size: 20px;
 }
 
+.make-links-small{
+	margin-left: 181px;
+}
+
 header h1 a img {
 	width: 340px;
 	height: 60px;
@@ -454,7 +494,7 @@ header h1 a img {
 	background: #d3d3d3;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 950px){
 	label {
 		display: block;
 		cursor: pointer;
@@ -503,8 +543,31 @@ header h1 a img {
 	
 	.nav-item a {
 		display: block;
-		margin: 0;
+		padding-right: 50px;
+	}
 
+	.nav-item button {
+		padding-right: 50px;
+	}
+
+	#myDropdown {
+		z-index: 2;
+		position: relative;
+		margin-right: 73px;
+	}
+
+	#myDropdown a{
+		z-index: 2;
+		position: relative;
+		background: #023B40;
+		color: #fff;
+		padding-left: 27px;
+		padding-right: 0;
+	}
+
+	#myDropdown a:hover {
+		color: #d9d9d9;
+		font-size: 22px;
 	}
 
 	.nav-item a:hover:before {
@@ -515,8 +578,17 @@ header h1 a img {
 		float: none;
 	}
 
+	.dropdown button {
+		padding-left: 23px;
+	}
+
+	.dropdown button:focus {
+		color: #f8de7e;
+	}
+
 	.dropdown-content{
-		margin: 0 0 0 30%;
+
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
 
 	.dropdown-content a:hover:before{
@@ -538,12 +610,18 @@ header h1 a img {
 
 }
 
-@media all and (max-width: 1125px) {
+@media all and (max-width: 1216px) {
 	.right { display: none; }
 	.left { display: none; }
+	#main {
+		max-width: 860px;
+	}
+	.make-links-small{
+		margin-left: 11px;
+	}
 }
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 475px) {
 	.move-right { margin-left: 60px; }
 	.make-links-small ul li a{
 		font-size: 14px;
@@ -582,4 +660,17 @@ header h1 a img {
 		width: 255px;
 		height: 45px;
 	}
+}
+
+#top {
+	margin-top: 40px;
+	height: 25%;
+}
+
+#middle {
+	height: 25%;
+}
+
+#bottom {
+	height: 25%;
 }
