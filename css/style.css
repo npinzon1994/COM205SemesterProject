@@ -15,6 +15,7 @@ html, body {
 	border: none;
 	cursor: pointer;
 	padding: 0 0 3px 0;
+	transition: .5s;
 }
 
 /* Dropdown button on hover & focus */
@@ -53,7 +54,29 @@ html, body {
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
+	transition: visibility 0s .4s, opacity .4s, top .4s;
 }
+
+
+
+.dropdown-content a {
+	color: #fff;
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.dropdown-content.show {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity .4s, top .4s;
+}
+
+.dropdown-content.show a {
+	padding: 14px 10px;
+}
+
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -64,7 +87,9 @@ html, body {
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+	display:block;
+}
 
 #page-container{
 	width: 100%;
@@ -106,6 +131,7 @@ html, body {
 	padding-bottom: 3px;
 	position: relative;
 	z-index: 1;
+	transition: .5s;
 }
 
 .nav-item a:hover {
@@ -148,10 +174,19 @@ html, body {
 	transition: all 0.3s ease-in-out 0s;
 }
 
+.dropbtn:after{
+	content: '\25b8';
+}
+
+.dropbtn:hover:after{
+	content: '\25be';
+}
+
 .dropbtn:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
+
 }
 
 .icons-left {
@@ -306,6 +341,10 @@ header {
 	opacity: 0.8;
 }
 
+#nav-dropdown{
+	transition: 0.4s ease-in-out;
+}
+
 #main {
 	width: 100%;
 	background-color: #FFF;
@@ -421,7 +460,7 @@ h3 {
 }
 
 .email-div {
-	text-align: left;
+	text-align: center;
 	padding-left: 20px;
 }
 
@@ -446,8 +485,9 @@ footer {
 }
 
 footer p {
-	 text-align: center;
-	 margin: 0;
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
 }
 
 a {
@@ -469,8 +509,8 @@ a:hover {
   width: 50px;
   height: 50px;
   border-radius: 30%;
-  color: #02b5c4;
-  background: #aa0000;
+  color: #FD3A4A;
+  background: #FD3A4A;
   float: left;
   margin: 45px 0 0 25px;
   display: flex;
@@ -522,11 +562,16 @@ a:hover {
 	font-size: 14px;
 	display: block;
 	margin-top: 50px;
+	transition: all .4s ease;
+	-webkit-transition: all .35s ease;
 }
 
 .learn-more-button:hover {
-	background: #aa0000;
-	color: #FFF;
+	border-color: #FD3A4A;
+}
+
+.column a:hover{
+	color: #FD3A4A;
 }
 
 .request-button {
@@ -538,6 +583,8 @@ a:hover {
 	border-style: solid;
 	border-color: #d9d9d9;
 	font-weight: bold;
+	transition: all .4s ease;
+	-webkit-transition: all .35s ease;
 }
 
 .request-button1{
@@ -551,11 +598,13 @@ a:hover {
 	font-size: 14px;
 	display: block;
 	margin: 50px 0 20px 0;
+	transition: all .4s ease;
+	-webkit-transition: all .35s ease;
 }
 
 .request-button1:hover {
-	background: #aa0000;
-	color: #fff;
+	border-color: #FD3A4A;
+	color: #FD3A4A;
 }
 
 .indented-text {
@@ -593,6 +642,11 @@ label {
 	color: #FFF;
 }
 
+.hide {
+	opacity: 0;
+	height: 0 !important;
+}
+
 #myDropdown a {
 	color: #383838;
 	padding: 14px;
@@ -604,10 +658,6 @@ label {
 }
 
 #myDropdown a:before{
-	visibility: hidden;
-}
-
-#myDropdown a:hover:before{
 	visibility: hidden;
 }
 
@@ -654,7 +704,8 @@ label {
 
 header h1 a img {
 	width: 340px;
-	height: 60px;
+	height: 50px;
+	padding-top: 8px;
 }
 
 .dropdown-content a {
@@ -868,12 +919,18 @@ header h1 a img {
 		margin-bottom: 30px;
 		height: auto;
 		min-height: 170px;
+		max-height: 190px;
 	}
+
 	.column img {
 		float: left;
 		clear: both;
 		max-width: 200px;
 		margin-right: 10px;
+	}
+
+	#np-coin-id{
+		min-height: 200px;
 	}
 
 	#img-div{
@@ -899,6 +956,12 @@ header h1 a img {
 
 @media all and (max-width: 419px) {
 	.request-button1{
+	}
+}
+
+@media all and (max-width: 537px) {
+	.column{
+		max-height: 190px;
 	}
 }
 
