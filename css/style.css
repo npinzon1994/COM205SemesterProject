@@ -443,7 +443,7 @@ h3 {
 	border-width: 1px;
 	border-color: #696969;
 	border-style: solid;
-	margin: 7px;
+	margin: 7px 25px;
 }
 
 .rect-img {
@@ -930,7 +930,7 @@ header h1 a img {
 	}
 
 	#np-coin-id{
-		min-height: 200px;
+		min-height: 250px;
 	}
 
 	#img-div{
