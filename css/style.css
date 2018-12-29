@@ -16,6 +16,8 @@ html, body {
 	cursor: pointer;
 	padding: 0 0 3px 0;
 	transition: .5s;
+	display: inline-block;
+	margin-top: 41px;
 }
 
 /* Dropdown button on hover & focus */
@@ -62,7 +64,7 @@ html, body {
 .dropdown-content a {
 	color: #fff;
 	display: block;
-	padding: 10px 10px;
+	padding: 0px 10px;
 	text-decoration: none;
 	transition: .5s;
 }
@@ -74,14 +76,15 @@ html, body {
 }
 
 .dropdown-content.show a {
-	padding: 14px 10px;
+	padding: 0px;
+	margin: 0px;
 }
 
 
 /* Links inside the dropdown */
 .dropdown-content a {
 	color: black;
-	padding: 12px 16px;
+	padding: 0px 16px;
 	text-decoration: none;
 	display: block;
 }
@@ -274,7 +277,7 @@ body {
 	/*padding: 20px 0 0 10px;*/
 	padding: 10px;
 	margin: 0 15px;
-	width: 26%;
+	width: 27%;
 	height: 350px;
 	background: #e8e8e8;
 	color: #374848;
@@ -335,7 +338,7 @@ header {
 	text-align: center;
 	height: 100px;
 	/*border-bottom: 1px solid #C8C8C8;*/
-	position: fixed;
+	position: sticky;
 	top: 0;
 	z-index: 1;
 	opacity: 0.8;
@@ -356,7 +359,6 @@ header {
 	border-color: #C8C8C8;
 	border-style: solid;
 	position: relative;
-	top: 101px;
 	height: auto;
 	padding-bottom: 80px;
 }
@@ -717,7 +719,7 @@ header h1 a img {
 
 }
 
-@media only screen and (max-width: 962px){
+@media only screen and (max-width: 968px){
 	label {
 		display: block;
 		cursor: pointer;
@@ -731,6 +733,10 @@ header h1 a img {
 	label:active {
 		background-color: rgba(255, 255, 255, 0.6);
 
+	}
+
+	.dropbtn {
+		margin-top: 5px;
 	}
 
 	.dropbtn:before {
@@ -767,18 +773,19 @@ header h1 a img {
 	.nav-item a {
 		display: block;
 		padding-right: 50px;
+		padding-top: 5px;
 	}
 
 	.nav-item button {
 		padding-right: 50px;
+		padding-top: 0px;
 	}
 
 	#myDropdown {
 		z-index: 2;
 		position: relative;
 		margin-right: 74px;
-		margin-top: 8px;
-		margin-bottom: 0;
+		margin-top: 3px;
 	}
 
 	#myDropdown a{
@@ -786,9 +793,7 @@ header h1 a img {
 		position: relative;
 		background: #006666;
 		color: #fff;
-		padding-left: 27px;
-		padding-right: 0;
-		padding-top: 40px;
+		padding: 5px 10px 5px 45px;
 	}
 
 	#myDropdown a:hover {
@@ -902,7 +907,7 @@ header h1 a img {
 
 }
 
-@media all and (max-width: 722px) {
+@media all and (max-width: 836px) {
 	.learn-more-button{
 		margin-top: 10px;
 		width: 95%;
@@ -945,7 +950,25 @@ header h1 a img {
 
 @media all and (max-width: 537px) {
 	.column{
-		min-height: 250px;
+		min-height: 280px;
+	}
+}
+
+@media all and (max-width: 475px) {
+	header h1 {
+		width: 255px;
+		height: 45px;
+	}
+
+	header h1 a {
+		width: 255px;
+		height: 45px;
+	}
+
+	header h1 a img {
+
+		width: 255px;
+		height: 45px;
 	}
 }
 
@@ -955,19 +978,40 @@ header h1 a img {
 	}
 
 	header h1 {
-		width: 178px;
-		height: 31px;
+		width: 204px;
+		height: 36px;
 	}
 
 	header h1 a {
-		width: 178px;
-		height: 31px;
+		width: 204px;
+		height: 36px;
 	}
 
 	header h1 a img {
-		margin-top: 12px;
-		width: 178px;
-		height: 31px;
+		margin-top: 5px;
+		width: 204px;
+		height: 36px;
+	}
+
+}
+
+@media all and (max-width: 377px) {
+	#motion-col{
+		min-height: 330px;
+	}
+
+}
+
+@media all and (max-width: 368px) {
+	.make-links-small ul li a{
+		font-size: 10px;
+	}
+
+}
+
+@media all and (max-width: 346px) {
+	#np-coin-id{
+		min-height: 330px;
 	}
 
 }
@@ -985,25 +1029,6 @@ header h1 a img {
 	.make-links-small ul {
 		padding-left: 0;
 		text-align: center;
-	}
-}
-
-
-@media all and (max-width: 475px) {
-	header h1 {
-		width: 255px;
-		height: 45px;
-	}
-
-	header h1 a {
-		width: 255px;
-		height: 45px;
-	}
-
-	header h1 a img {
-		margin-top: 12px;
-		width: 255px;
-		height: 45px;
 	}
 }
 
