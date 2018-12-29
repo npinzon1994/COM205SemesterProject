@@ -856,19 +856,14 @@ header h1 a img {
 	}
 }
 
-@media all and (max-width: 403px) {
-	.make-links-small ul li a{
-		font-size: 12px;
-	}
-	.make-links-small ul {
-		margin-left: 10px;
-	}
-}
-
 @media all and (max-width: 385px) {
-	.make-links-small {
+	.make-links-small ul li a{
+		font-size: 10px;
 		text-align: center;
 	}
+	/*.make-links-small ul {*/
+		/*margin-left: 10px;*/
+	/*}*/
 }
 
 @media all and (max-width: 600px) {
@@ -954,9 +949,27 @@ header h1 a img {
 	}
 }
 
-@media all and (max-width: 419px) {
-	.request-button1{
+@media all and (max-width: 420px) {
+	.make-links-small ul li a{
+		font-size: 12px;
 	}
+
+	header h1 {
+		width: 178px;
+		height: 31px;
+	}
+
+	header h1 a {
+		width: 178px;
+		height: 31px;
+	}
+
+	header h1 a img {
+		margin-top: 12px;
+		width: 178px;
+		height: 31px;
+	}
+
 }
 
 @media all and (max-width: 537px) {
