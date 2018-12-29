@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../scripts/dropdown.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/title-square-trans.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -18,7 +19,7 @@
 
 				</h1>
 
-				<label for="toggle">&#9776;</label>
+				<label for="toggle">&#8801;</label>
 				<input type="checkbox" id="toggle"/>
 
 			<ul class="nav-list">
@@ -54,7 +55,7 @@
 			<div style="margin-top: 40px; text-align: justify;
   text-justify: inter-word;">
 			<img align="left" src="../images/meOnDrums.jpg" id="about-page-img" alt="Nick Pinzon live at Sparkboom OTW Fest 2013">
-			<p style="text-align: left; padding-right: 20px;">Nicholas Pinzon has been involved in creating music over the
+			<p>Nicholas Pinzon has been involved in creating music over the
 				past couple of decades. Starting from the age of six, Nick started
 				to learn how to play the drums; He eventually started picking up
 				guitar, bass and ukulele over the years-combining the culmination of
@@ -63,14 +64,14 @@
 				covers songs from video games.</p>
 			</div>
 			<div style="text-align: justify; text-justify: inter-word;">
-			<p style="text-align: left; padding-right: 20px;">Nick's love for video game music doesn't stop there. He along
+			<p>Nick's love for video game music doesn't stop there. He along
 				with his brother Andrew, and veteran bassist Anthony Arma, also have
 				a YouTube channel called Motion Ocean where they cover music from
 				video games on their ukuleles.</p>
 			</div>
-			
+
 			<div style="text-align: justify; text-justify: inter-word;">
-			<p style="text-align: left; padding-right: 20px;">In October 2017, Nick Pinzon entered into his newest endeavor:
+			<p>In October 2017, Nick Pinzon entered into his newest endeavor:
 				ArmaBanks. Joining Motion Ocean bassist Anthony Arma and his
 				brother, Nick, alongside friend and seasoned vocalist Larry Banks,
 				these gentlemen combine a mix of rock, soul, funk, jazz, disco, and
@@ -78,13 +79,14 @@
 			</div>
 				
 				<div>
-					<div class="email-div">
-						<a href="mailto:npinzon1994@gmail.com" class="request-button1" style="display: inline-block; margin-right: 20px;">CONTACT NICK</a>
-					</div>
-					
-					<div>
-						
-					</div>
+					<form action="../scripts/HandleForm.php" id="contactForm">
+						<h2>Contact Nick</h2>
+						<input type="text" name="email" placeholder="Email" required>
+						<input type="text" name="name" placeholder="Name" required>
+						<textarea name="message" placeholder="Message" required></textarea><br>
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+					</form>
 				</div>
 			</div>
 
